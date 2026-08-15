@@ -100,7 +100,7 @@ function App() {
 
         {step === 0 && (
           <div className="screen">
-            <h1 className="headline">Would you like to go on a date me?</h1>
+            <h1 className="headline">Would you like to go on a date with me?</h1>
             <p className="subtext">There's something I'd love to ask you in person.</p>
             <div className="button-row">
               <button className="btn btn-primary" onClick={() => setStep(1)}>Yes</button>

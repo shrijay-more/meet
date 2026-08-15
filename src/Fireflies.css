@@ -1,0 +1,25 @@
+.fireflies {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1; /* above the background/overlay, below the card content */
+}
+
+.firefly {
+  position: absolute;
+  bottom: -10px;
+  border-radius: 50%;
+  opacity: 0;
+  animation-name: drift-up;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drift-up {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 0.9; }
+  50% { transform: translateY(-50vh) translateX(15px); }
+  90% { opacity: 0.4; }
+  100% { transform: translateY(-100vh) translateX(-10px); opacity: 0; }
+}
